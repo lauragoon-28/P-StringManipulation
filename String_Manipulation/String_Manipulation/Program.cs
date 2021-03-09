@@ -18,12 +18,14 @@ namespace String_Manipulation
             if (!quote.Contains(searchWord))
             {
                 Console.WriteLine($"Sorry, I could not find your word {searchWord}");
-
+                // string reverseWord = string.empty
                 char[] charArray = searchWord.ToCharArray();
                 for (int i = charArray.Length - 1; i >= 0; i--)
                 {
                     Console.Write($"{charArray[i]}");
+                    //reverseWord = reverseWord + searchWord[i];
                 }
+                // console.writeline(reverseWord)
                 Console.WriteLine();
             }
             else
